@@ -130,7 +130,7 @@ body {
 .timer_wrapper {
   width: 303px;
   height: 24px;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left: 15px;
   border: 2px solid black;
   border-radius: 10px;
@@ -192,6 +192,13 @@ body {
   margin-left: 120px;
   font-size: 20px;
   font-weight: bold;
+}
+
+.return_button {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
