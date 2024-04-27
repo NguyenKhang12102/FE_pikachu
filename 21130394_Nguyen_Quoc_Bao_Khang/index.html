@@ -1,0 +1,85 @@
+<!--
+MSSV 21130394
+Tên  Nguyễn Quốc Bảo Khang
+SĐT  0971445992
+Lớp  DH21DTB
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pikachu</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<div class="gamepikachu">
+    <div class=" page page2">
+        <div class="gameview">
+            <div class="title">
+                <h1> GAME PIKACHU</h1>
+            </div>
+            <div class="menu">
+                <button class="btn_menu" onclick="thoiGian()"> Bắt đầu</button>
+                <button class="btn_menu" onclick="refresh()"><i class="fa-solid fa-rotate-right"></i> Đảo</button>
+                <button class=" btn_menu stop " onclick="stop()"><i class="fa-solid fa-stop"></i> Tạm dừng</button>
+                <button class=" btn_menu  " onclick="reset()"> Chơi lại</button>
+
+                <button class=" btn_menu  "id ="popupBtn"><i class="fa-solid fa-question"></i> Thông Tin</button>
+
+                <!-- Nội dung popup -->
+                <div id="popup" class="popup">
+                    <span1 class="close-btn" id="closeBtn">x</span1>
+                    <h2>Thông tin</h2>
+                    <p>Mã số sinh viên: 21130394.</p>
+                    <p>Họ tên: Nguyễn Quốc Bảo Khang.</p>
+                    <p>Năm sinh:2003.</p>
+                    <p>Quê: Bình Thuận.</p>
+                    <p>Sức Khỏe Sinh Sản:Tốt.</p>
+                    <p>Tình trạng hôn nhân:độc thân.</p>
+                </div>
+
+
+                <div class="level">Level:
+                    <button class="levelbtn level1" onclick="lv1()" type="submit" value="1">1</button>
+                    <button class="levelbtn level2" onclick="lv2()" type="submit" value="2">2</button>
+                    <button class="levelbtn level3" onclick="lv3()" type="submit" value="3">3</button>
+                    <button class="levelbtn level4" onclick="lv4()" type="submit" value="4">4</button>
+                    <button class="levelbtn level5" onclick="lv5()" type="submit" value="5">5</button>
+                    <button class="levelbtn level6" onclick="lv6()" type="submit" value="6">6</button>
+
+                </div>
+                <div class="level_score">Điểm: <span></span>
+                </div>
+
+
+
+            </div>
+            <div class="gamebox">
+                <div id="line" class="line"></div>
+                <div class="time">
+<!--                    <h2 class="sumtime">+ 5s</h2>-->
+                    <div class="column">
+                        <div class="column-x"></div>
+                    </div>
+                    <div class="tg"><i class="fa-solid fa-clock"></i> Thời gian</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+</script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+//MSSV 21130394
+//Tên  Nguyễn Quốc Bảo Khang
+//SĐT  0971445992
+//Lớp  DH21DTB
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+
+}
+
+.gamepikachu {
+  height: 700px;
+  width: 1300px;
+  margin: auto;
+  margin-top: 5px;
+
+  .page1 {
+    height: 700px;
+    width: 1200px;
+    background-image: url("image/bg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+
+    button {
+      margin-top: 150px;
+      border: none;
+      background: none;
+      font-weight: 900;
+      color: white;
+      font-size: 60px;
+      font-family: "Britannic Bold";
+
+    }
+
+    button:hover {
+      background: rgba(68, 68, 68, 0.34);
+      border: white 2px solid;
+      padding: 10px 10px;
+      border-radius: 5px;
+
+    }
+  }
+
+  .page2 {
+    //display: none;
+    height: 700px;
+    width: 1300px;
+    background-image: url("image/bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .gameview {
+      height: 700px;
+      width: 1300px;
+      position: absolute;
+      background: rgba(66, 66, 66, 0.27);
+
+      .title {
+        margin: 20px;
+
+        h1 {
+          color: white;
+
+        }
+      }
+
+      .menu {
+        margin-left: 20px;
+        width: 1300px;
+        display: flex;
+
+
+
+        .btn_menu {
+          height: 40px;
+          width: 130px;
+          border-radius: 3px;
+          font-size: 22px;
+          border: none;
+          margin-left: 5px;
+
+        }
+
+        button:hover {
+          background: #fab0b0;
+          color: white;
+        }
+
+        .level {
+          font-size: 30px;
+          color: white;
+          font-weight: bold;
+          width: 400px;
+          margin-left: 5px;
+
+          .levelbtn {
+            height: 25px;
+            width: 25px;
+            border-radius: 3px;
+            font-size: 22px;
+            border: none;
+          }
+
+
+        }
+        .level_score{
+          font-size: 20px;
+          color: white;
+          font-weight: bold;
+          width: 100px;
+
+        }
+        .line {
+          position: absolute;
+          background-color: red;
+          height: 2px; /* Độ dày của đường thẳng */
+          display: none; /* Ban đầu ẩn đường thẳng */
+        }
+
+
+
+        .popup {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          padding: 20px;
+          border: 1px solid #ccc;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          z-index: 9999;
+          max-width: 80%;
+
+        }
+
+        .close-btn {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          cursor: pointer;
+        }
+        .suffer_times{
+          font-size: 20px;
+          color: white;
+          font-weight: bold;
+          width: 190px;
+          margin-left: 5px;
+
+        }
+
+      }
+
+      .gamebox {
+        display: flex;
+        margin-top: 35px;
+
+
+        .theIcon {
+          margin: auto;
+
+          h1 {
+            color: white;
+            background: #fab0b0;
+            height: 100px;
+            width: 700px;
+            margin-top: -100px;
+            padding-top: 60px;
+            text-align: center;
+            border-radius: 100px;
+            box-shadow: 5px 5px 49px 30px rgba(178, 140, 218, 0.7) inset;
+
+          }
+
+          .row {
+            display: flex;
+          }
+
+          .img {
+            width: 55px;
+            height: 55px;
+
+
+          }
+
+        }
+
+        .time {
+          display: block;
+          margin: auto;
+
+
+          .sumtime {
+
+            color: white;
+            transform: translate(80px, 10px);
+          }
+
+          .column {
+            margin: auto;
+            height: 480px;
+            width: 22px;
+            background: #fab0b0;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 1px 1px 12px 4px rgba(204, 14, 14, 0.7) inset;
+
+            .column-x {
+              position: absolute;
+              margin: auto;
+              height: 8px;
+              width: 22px;
+              background: #84cae1;
+              border-radius: 10px;
+              box-shadow: 1px 1px 10px 3px rgba(10, 128, 176, 0.7) inset;
+            }
+          }
+
+          .tg {
+            color: white;
+            font-weight: normal;
+            margin-top: 10px;
+            width: 130px;
+            height: 30px;
+            font-size: 18px;
+            //border-radius: 3px;
+            //background: rgba(255, 255, 255, 0.34);
+            text-align: center;
+
+          }
+        }
+
+      }
+
+    }
+  }
+
+
+  .display-none {
+    display: none;
+  }
+
+  .border {
+    width: 55px;
+    height: 55px;
+    margin: 1px;
+
+  }
+
+  img.selected {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 20px 3px #4d4b4b;
+
+  }
+
+  img.selected_hint {
+    transform: scale(1.0001);
+    box-shadow: 1px 1px 8px 2px #ee6060;
+    border: 2px solid #e31a1a;
+
+  }
+
+
+}
